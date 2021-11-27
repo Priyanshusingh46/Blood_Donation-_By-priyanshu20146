@@ -4,7 +4,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const router = express.Router();
 const app = express();
-const port=8000;
+const port= process.env.PORT ||8000;
 require("./db/conn");
 const Register = require("./models/signup");
 const patient = require("./models/blood");
