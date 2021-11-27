@@ -1,0 +1,228 @@
+doctype html
+head
+  title www.bihar.blood bank hospital.in
+  style.
+    #covid {
+    display: block;
+    text-align: center;
+    border-radius: 9px;
+    padding: 12px 115px;
+    margin: 12px 12px;
+    color: black;
+    background-image: url(https://img.etimg.com/thumb/width-1200,height-900,imgsize-443675,resizemode-1,msid-79177610/news/elections/assembly-elections/bihar/two-answers-to-nitish-kumar.jpg);
+    background-size: 252px 100px;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    font-family: 'Oswald', sans-serif;
+    }
+    #first {
+    display: block;
+    text-align: center;
+    border-radius: 9px;
+    padding: 12px 115px;
+    margin: 0px 12px;
+    color: black;
+    border-radius: 15px;
+    font-family: 'Oswald', sans-serif;
+    }
+    .container {
+    display: block;
+    padding: 120px 522px;
+    margin: 5px 5px;
+    }
+    .nave {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    background-color: #06af87a1;
+    border-radius: 10px;
+    margin: 12px;
+    }
+    #name {
+    display: block;
+    text-align: center;
+    padding: 12px 12px;
+    margin: 5px 464px;
+    width: 522px;
+    height: 5px;
+    border-radius: 15px;
+    }
+    .item {
+    display: inline-block;
+    margin: 2px, 3px;
+    padding: 8px;
+    text-decoration: none;
+    }
+    #home {
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    }
+    #home:hover {
+    color: blanchedalmond;
+    }
+    #blood {
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    }
+    #blood:hover {
+    color: blanchedalmond;
+    }
+    #requirement {
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    }
+    #requirement:hover {
+    color: blanchedalmond;
+    }
+    #contact {
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    }
+    #contact:hover {
+    color: blanchedalmond;
+    }
+    #contactnumber {
+    display: block;
+    text-align: center;
+    padding: 12px 12px;
+    margin: 5px 464px;
+    width: 522px;
+    height: 5px;
+    border-radius: 15px;
+    }
+    #patient {
+    display: block;
+    text-align: center;
+    padding: 12px 12px;
+    margin: 5px 464px;
+    width: 522px;
+    height: 5px;
+    border-radius: 15px;
+    }
+    #patient_group {
+    display: block;
+    text-align: center;
+    padding: 12px 12px;
+    margin: 5px 464px;
+    width: 522px;
+    height: 5px;
+    border-radius: 15px;
+    }
+    #emai {
+    display: block;
+    text-align: center;
+    padding: 12px 12px;
+    margin: 5px 464px;
+    width: 522px;
+    height: 5px;
+    border-radius: 15px;
+    }
+    #password {
+    display: block;
+    text-align: center;
+    padding: 12px 12px;
+    margin: 5px 464px;
+    width: 522px;
+    height: 5px;
+    border-radius: 15px;
+    }
+    #district {
+    text-align: center;
+    padding: 12px 199px;
+    margin: 5px 464px;
+    width: 542px;
+    border-radius: 15px;
+    }
+    #btn {
+    display: block;
+    text-align: center;
+    padding: 12px 12px;
+    margin: 21px 664px;
+    width: 152px;
+    height: 40px;
+    border-radius: 15px;
+    }
+    #btn:hover {
+    background-color: rgb(82, 108, 221);
+    color: white;
+    }
+    body {
+    background-image: url("../donation/m1.jpg");
+    opacity: 1;
+    background-repeat: no-repeat;
+    background: size 100px;
+    background-position: cover;
+    }
+.nave
+  nav#navbar
+    ul
+      li#home.item
+        a(href='/') Home
+      li#blood.item
+        a(href='/blood_donation') Blood Donation
+      li#contact.item
+        a(href='/contact') Contact Us
+.photo
+  h1#covid  Bihar Blood donation bank
+h2#first  Fill The Form !
+form.login(action='/blood_donation', method='POST',required)
+  .container
+  input#name(type='text' ,name='username', placeholder='Enter Applicant name',required )
+  br
+  input#contactnumber(type='text' ,name='contact' ,placeholder='Enter your contact number',required)
+  br
+  input#patient(type='text', name='patient', placeholder='Enter patient name',required)
+  br
+  br
+  input#patient_group(type='text', name='group' ,placeholder='Enter patient blood group',required )
+  br
+  input#emai(type='text', name='email' ,placeholder='Enter your email',required )
+  br
+  input#password(type='text', name='Pass', placeholder='Enter your password',required)
+  br
+  select#district(name='district')
+    option(value='select') select the district
+    option#s1(value='Araria') Araria
+    option#s2(value='Arwal') Arwal
+    option#s3(value='Aurangabad') Aurangabad
+    option#s4(value='Banka') Banka
+    option#s5(value='Begusarai') Begusarai
+    option#s6(value='Bhagalpur') Bhagalpur
+    option#s7(value='Bhojpur') Bhojpur
+    option#s8(value='Buxar') Buxar
+    option#s9(value='Dharbhanga') Darbhanga
+    option(value='East Champaran(Motihari)') East Champaran(Motihari)
+    option#s11(value=' Gaya') Gaya
+    option#s12(value='Gopalganj') Gopalganj
+    option#s13(value=' Jamui') Jamui
+    option#s14(value='Jehanabad') Jehanabad
+    option#s15(value='Kaimur') Kaimur
+    option#s16(value='Kishanganj') Kishanganj
+    option#s17(value='Lakhisarai') Lakhisarai
+    option#s18(value='Madhubani') Madhubani
+    option#s19(value=' Muzaffarpur') Muzaffarpur
+    option#s20(value='Nalanda') Nalanda
+    option#s21(value='Patna') Patna
+    option#s22(value='Purnia') Purnia
+    option#s23(value=' Rohtas') Rohtas
+    option#s24(value=' Saharsa') Saharsa
+    option#s25(value='Samastipur') Samastipur 
+    option#s26(value='Saran') Saran
+    option#s27(value=' Sheikhpura') Sheikhpura
+    option#s28(value=' Sheohar') Sheohar
+    option#s29(value=' Sitamarhi') Sitamarhi
+    option#s30(value='Siwan') Siwan
+    option#s31(value=' Supaul') Supaul
+    option#s32(value='Vaishali') Vaishali
+    option#s33(value=' West Champara') West Champaran
+  input#btn(type='submit')
